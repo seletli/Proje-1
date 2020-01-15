@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+@model List<TubeRehber.Model.Entities.Comment>
+
+
+<div class="card mb-3">
+    <div class="card-header">
+        <i class="fas fa-table"></i>
+        Comment Operations
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Member</th>
+                        <th>Comment</th>
+                        <th>ChannelName</th>
+                        <th>Status</th>
+                        <th>Delete</th>
+
+                        
+
+
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>ID</th>
+                        <th>Member</th>
+                        <th>Comment</th>
+                        
+                        <th>Status</th>
+                        <th>Delete</th>
+
+
+                    </tr>
+                </tfoot>
+                <tbody>
+
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                        <td>@item.ID</td>
+                        <td>@item.Member.UserName</td>
+                        <td>@item.comment</td>
+                        <td>@item.Channel.ChannelName</td>
+                        <td>@item.Status</td>
+                        <td> <a href="/Admin/CommentOperations/Delete/@item.ID" class="templatemo-edit-btn">Delete</a> </td>
+                        </tr>
+                    }
+
+
+
+
+
+
+
+                        
+
+
+
+                    </tbody>
+            </table>
+        </div>
+    </div>
+    <h1></h1>
+
+
+
+   
+</div>
+
+

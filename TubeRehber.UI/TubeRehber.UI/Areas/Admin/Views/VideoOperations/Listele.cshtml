@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "Listele";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@model List<TubeRehber.Model.Entities.Channel>
+<div class="card mb-3">
+    <div class="card-header">
+        <i class="fas fa-table"></i>
+        Kanal Listesi
+    </div>
+
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>CategoryID</th>
+                        <th>Channel Name</th>
+                        <th>Channel Link</th>
+                        <th>Channel Status</th>
+                        <th>Delete</th>
+                        
+
+
+
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>CategoryID</th>
+                        <th>Channel Name</th>
+                        <th>Channel Link</th>
+                        <th>Channel Status</th>
+                        <th>Delete</th>
+                        
+
+
+                    </tr>
+                </tfoot>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.CategoryID</td>
+                            <td>@item.ChannelName</td>
+                            <td>@item.ChannelLink</td>
+                            <td>@item.Status</td>
+                            <td> <a href="/Admin/VideoOperations/Delete/@item.ID" class="templatemo-edit-btn">Delete</a> </td>
+                            
+                        </tr>
+                    }
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>

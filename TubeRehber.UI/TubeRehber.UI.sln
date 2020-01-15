@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TubeRehber.UI", "TubeRehber.UI\TubeRehber.UI.csproj", "{068CDFB5-6F28-4F8A-9000-29F1ED6F34E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TubeRehber.Core", "TubeRehber.Core\TubeRehber.Core.csproj", "{41B39F59-D38F-4F38-87A1-82F984B17ED6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TubeRehber.Model", "TubeRehber.Model\TubeRehber.Model.csproj", "{35386157-E417-4752-B844-27F498E35C86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TubeRehber.Map", "TubeRehber.Map\TubeRehber.Map.csproj", "{ED8B6B3B-F9C1-4D74-A161-A5FBE531CF84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TubeRehber.DAL", "TubeRehber.DAL\TubeRehber.DAL.csproj", "{5E326B08-3994-4818-822E-95B52C6114FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TubeRehber.Service", "TubeRehber.Service\TubeRehber.Service.csproj", "{2C46AAE4-DDDA-4564-AD33-4FB330199B96}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8E3DC4EC-796B-42DE-886D-E2B1AF4A3EFE}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.txt = ReadMe.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{068CDFB5-6F28-4F8A-9000-29F1ED6F34E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{068CDFB5-6F28-4F8A-9000-29F1ED6F34E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{068CDFB5-6F28-4F8A-9000-29F1ED6F34E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{068CDFB5-6F28-4F8A-9000-29F1ED6F34E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41B39F59-D38F-4F38-87A1-82F984B17ED6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41B39F59-D38F-4F38-87A1-82F984B17ED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41B39F59-D38F-4F38-87A1-82F984B17ED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41B39F59-D38F-4F38-87A1-82F984B17ED6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35386157-E417-4752-B844-27F498E35C86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35386157-E417-4752-B844-27F498E35C86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35386157-E417-4752-B844-27F498E35C86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35386157-E417-4752-B844-27F498E35C86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED8B6B3B-F9C1-4D74-A161-A5FBE531CF84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED8B6B3B-F9C1-4D74-A161-A5FBE531CF84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED8B6B3B-F9C1-4D74-A161-A5FBE531CF84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED8B6B3B-F9C1-4D74-A161-A5FBE531CF84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E326B08-3994-4818-822E-95B52C6114FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E326B08-3994-4818-822E-95B52C6114FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E326B08-3994-4818-822E-95B52C6114FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E326B08-3994-4818-822E-95B52C6114FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C46AAE4-DDDA-4564-AD33-4FB330199B96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C46AAE4-DDDA-4564-AD33-4FB330199B96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C46AAE4-DDDA-4564-AD33-4FB330199B96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C46AAE4-DDDA-4564-AD33-4FB330199B96}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {700E230C-8FEF-448F-A85C-7C11EA1C9BA7}
+	EndGlobalSection
+EndGlobal

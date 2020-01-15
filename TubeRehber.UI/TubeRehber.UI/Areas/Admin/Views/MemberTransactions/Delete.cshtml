@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+@model List<TubeRehber.Model.Entities.Member>
+
+<div class="card mb-3">
+    <div class="card-header">
+        <i class="fas fa-table"></i>
+        Data Table Example
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Member ID</th>
+                        <th>Role</th>
+                        <th>UserName</th>
+                        <th>Name</th>
+                        <th>SurName</th>
+                        <th>Status</th>
+                        <th>Delete</th>
+
+
+
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Member ID</th>
+                        <th>Role</th>
+                        <th>UserName</th>
+                        <th>Name</th>
+                        <th>SurName</th>
+                        <th>Status</th>
+                        <th>Delete</th>
+
+
+                    </tr>
+                </tfoot>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.ID</td>
+                            <td>@item.Role</td>
+                            <td>@item.UserName</td>
+                            <td>@item.Name</td>
+                            <td>@item.SurName</td>
+                            <td>@item.Status</td>
+                            <td>
+                                <a href="/Admin/MemberTransactions/Deletee/@item.ID">Sil</a>
+                            </td>
+                        </tr>
+                    }
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="card-footer small text-muted"></div>
+</div>
+
+
+

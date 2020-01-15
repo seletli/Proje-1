@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MemberLayout.cshtml";
+
+}
+
+
+
+
+
+
+@foreach (var ChannelLink in (Dictionary<string, string>)TempData["EducationChannelLinks"])
+{
+    <form action="/Member/Education/Add" method="post">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table>
+                    <tbody>
+
+
+                        <tr>
+                            <td width="440">
+
+                                <div class="templatemo-content-widget white-bg col-2">
+
+                                    <div class="square"></div>
+
+                                    <h2 name="Channel" value="" class="templatemo-inline-block">@ChannelLink.Key</h2>
+
+
+                                    <h2 class="templatemo-inline-block"></h2><hr />
+
+                                    <iframe width="1000" height="400" src="@ChannelLink.Value" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                    <div class="form-group">
+                                        <textarea name="comment" value="" cols="30" rows="7" class="form-control" maxlength="750"></textarea>
+                                    </div>
+                                    <div>
+                                        <input type="submit" value="Yorum Ekle" class="form-control btn btn-primary" />
+                                    </div>
+                                    <h4></h4>
+                                    <div class="form-group">
+                                        <a class="form-control" style="background-color:aqua" href="@Url.Action("List","Education",new {ChannelName=ChannelLink.Key })">Yorumlar</a>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="Status">
+
+                                        </label>
+                                        <input readonly name="ChannelName" value="@ChannelLink.Key" class="form-control" />
+                                    </div>
+                                </div>
+</td>
+
+                        </tr>
+
+
+
+
+                    </tbody>
+                
+                </table>
+            </div>
+        </div>
+    </form>
+    
+}
+
+
+
+
+

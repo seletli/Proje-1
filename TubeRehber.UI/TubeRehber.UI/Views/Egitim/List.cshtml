@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card mb-3">
+    @foreach (var Yorum in (Dictionary<string, string>)TempData["Yorumlar"])
+    {
+
+        <div class="card-header">
+            <header class="templatemo-site-header">
+                <div class="square"></div>
+                <h1>Tube Rehber</h1>
+            </header>
+
+        </div>
+
+
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th><strong><a>@Yorum.Value</a></strong></th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td><em>>@Yorum.Key</em></td>
+
+                        </tr>
+
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }
+</div>
+
+

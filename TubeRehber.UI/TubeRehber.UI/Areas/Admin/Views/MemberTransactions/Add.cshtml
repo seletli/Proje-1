@@ -1,0 +1,189 @@
+﻿
+@{
+    ViewBag.Title = "Add";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>SB Admin - Dashboard</title>
+    <!-- Custom fonts for this template-->
+    <link href="Content/Template/Admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <!-- Page level plugin CSS-->
+    <link href="Content/Template/Admin/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="Content/Template/Admin/css/sb-admin.css" rel="stylesheet">
+</head>
+<body id="page-top">
+
+    <div id="wrapper">
+
+        <div id="content-wrapper">
+            <div class="container-fluid">
+
+
+
+                <!-- DataTables Example -->
+                <form action="/Admin/MemberTransactions/Add" method="post" enctype="multipart/form-data">
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <i class="fas fa-table"></i>
+                            Data Table Example
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+
+                                            <th>MemberRole</th>
+                                            <th>UserName</th>
+                                            <th>Name</th>
+                                            <th>SurName</th>
+                                            <th>BirthDate</th>
+                                            <th>Email</th>
+                                            <th>MemberStatus</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+
+                                            <th>MemberRole</th>
+                                            <th>UserName</th>
+                                            <th>Name</th>
+                                            <th>SurName</th>
+                                            <th>BirthDate</th>
+                                            <th>Email</th>
+                                            <th>MemberStatus</th>
+
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="form-group">
+
+                                                    <label for="Role">
+
+                                                    </label>
+                                                    <select name="Role" value="" class="form-control">
+                                                        <option>Admin</option>
+                                                        <option>Member</option>
+                                                    </select>
+
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-group">
+                                                    <label for="UserName">
+
+                                                    </label>
+                                                    <input name="UserName" value="" class="form-control" />
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-group">
+                                                    <label for="Name">
+
+                                                    </label>
+                                                    <input name="Name" value="" class="form-control" />
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-group">
+                                                    <label for="SurName">
+
+                                                    </label>
+                                                    <input name="SurName" value="" class="form-control" />
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-group">
+                                                    <label for="BirthDate">
+
+                                                    </label>
+                                                    <input name="BirthDate" value="" class="form-control" />
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-group">
+                                                    <label for="Email">
+
+                                                    </label>
+                                                    <input name="Email" value="" class="form-control" />
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="form-group">
+                                                    <label for="Status">
+
+                                                    </label>
+                                                    <input readonly name="Status" value="Active" class="form-control" />
+                                                </div>
+                                            </td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <div>
+
+                                    
+                              
+
+                                    <div class="form-group">
+                                        <label for="Password">
+                                            Password
+                                        </label>
+                                        <input name="Password" value="" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer small text-muted"></div>
+                    </div>
+
+                    <input type="submit" value="Kaydet" class="form-control btn btn-primary" />
+                </form>
+
+            </div>
+
+            <!-- Sticky Footer -->
+            <footer class="sticky-footer">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright © Your Website 2019</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="Content/Template/Admin/vendor/jquery/jquery.min.js"></script>
+    <script src="Content/Template/Admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="Content/Template/Admin/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="Content/Template/Admin/vendor/chart.js/Chart.min.js"></script>
+    <script src="Content/Template/Admin/vendor/datatables/jquery.dataTables.js"></script>
+    <script src="Content/Template/Admin/vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="Content/Template/Admin/js/sb-admin.min.js"></script>
+    <!-- Demo scripts for this page-->
+    <script src="Content/Template/Admin/js/demo/datatables-demo.js"></script>
+    <script src="Content/Template/Admin/js/demo/chart-area-demo.js"></script>
+</body>
+</html>
